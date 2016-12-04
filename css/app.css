@@ -1,0 +1,850 @@
+
+/*GENERAL RULES*/
+@font-face
+{
+	font-family:"Goonies";
+	src: url('../fonts/Goonies.ttf') format("opentype");
+}
+
+body
+{
+	font-family: 'Fira Sans', Helvetica, sans-serif;
+	color:#c6ccdd;
+	background-color:#242a3d;
+}
+h1
+{
+	font-family:'Goonies', Arial Bold, sans-serif;
+	color:#e1c22e;
+}
+#gooniesVid{
+	display: block;
+	margin:0 auto;
+	text-align: center;
+}
+
+.boxHelper
+{
+	background-color:black;
+	color:white;
+	text-align: center;
+	width: 170px;
+	height: 170px;
+}
+
+a
+{
+	color: #000;
+	text-decoration: none;
+	transition: all .1s linear;
+}
+
+.title
+{
+	background-image:url(../img/large_wood1.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+.title h1
+{
+	text-align:center;
+	margin-top: 10%;
+	padding-bottom: 1em;
+}
+
+
+
+
+
+/*PARALAX HEADER*/
+
+.parallax 
+{
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax_bannerGroup
+{
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax_layer
+{
+  position: absolute;
+  top: 0px;
+}
+.parallax_layer-base 
+{
+
+  transform: translateZ(-4px) scale(7);
+  top:-500px;
+  display: block;
+  right: 15%;
+}
+.parallax_layer-mound
+{	
+/*	background-color: red;
+*/	/*transform: translateZ(-3px) scale(2);
+	top:-500px;
+	margin-left: -300px;*/
+	display: none;
+}
+.parallax_layer-boat
+{
+	transform: translateZ(-2px) scale(4);
+/*	top:20%;*/
+	margin-top: -250px;
+	margin-left: -100px;
+
+}
+.parallax_layer-treeline
+{
+/*	background-color: red;*/
+	transform: translateZ(-1px) scale(3);
+	top:10%;
+	right: 15%;
+	
+}
+
+
+
+
+.parallax_contentGroup
+{
+  position: relative;
+  transform-style: preserve-3d;
+  height: 100vh;
+  /*top:-85%;*/
+}
+.parallax_layer-house
+{
+	/*background-color: red;*/
+	transform: translateZ(0);
+	position: relative;
+	margin-top: -350px;
+	
+} 
+
+
+.parallax_layer-front{
+	margin-top: 50px;
+}
+
+#blue
+{background-color:#242a3d;}
+
+				/*PARALLAX MEDIA QUERIES*/
+	/*439*/@media screen and (min-width: 64em) {
+		.parallax_layer-boat
+		{
+			top: 20%;
+		}
+		
+	}
+
+
+
+/*NAV*/
+
+
+
+.mainNav
+{
+	list-style-type: none;
+	text-align: center;
+	margin-top: 30px
+}
+
+
+.mainNav li
+{
+	display: block;
+	margin-right: 2em;
+
+}
+
+.mainNav li a
+{
+ 	font-size: 2.5em;
+	color:#c6ccdd;
+
+}
+	
+.mainNav li a:hover
+{
+	border-top: 1px solid #c6ccdd;
+}
+
+.title-bar 
+{
+	background-color:#c6ccdd;
+	padding-left: .7em;
+	padding-top: .95em;
+	width: 3em;
+	height: 3em;
+	border-radius: 30px;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+
+.menu-icon::after
+{
+	background:#242a3d;
+	box-shadow: 0 7px 0 #242a3d, 0 14px #242a3d;
+}
+.menu-icon:hover::after
+{
+	background:#434f6c;
+	box-shadow: 0 7px 0 #434f6c, 0 14px #434f6c;
+}
+					/*HOME MEDIA QUERIES*/
+	/*439*/@media screen and (min-width: 27.4375em) {
+		#logo
+		{
+		/*	padding-top: 20%;*/
+		position: absolute;
+		margin-left: 65%;
+		margin-top: 300px;
+		}
+		#fullBanner{
+			width: 100%;
+		/*	position: absolute;*/
+		}
+		
+	}
+
+/*FOOTER*/
+
+#mainFooter
+{
+	background-image:url(../img/footer_bg.svg), url(../img/footer_bg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	transform: translateZ(-1px) scale(1);
+/*	right: 15%;*/
+}
+
+#footerNav
+{
+	text-align: center;
+}
+
+
+
+#footerNav ul li
+{
+	display: inline;
+	margin-right: 2em;
+	
+}
+
+#footerNav li a
+{
+ 	font-size: 2.5em;
+	color:#c6ccdd;
+	
+}
+	
+#footerNav li a:hover
+{
+	border-top: 1px solid #c6ccdd;
+}
+
+
+
+
+/*HOME SECTION*/
+
+#text
+{
+	text-align:center;
+	font-size:1.8em;
+}
+#text p
+{
+	line-height:1em;
+}
+
+#goon1
+{
+	font-family:'Goonies', Arial Bold, sans-serif;
+	font-size:1.55rem;
+	display:inline
+}
+
+.space
+{
+	font-size: .25em
+}
+
+#and
+{
+	font-size: 3em;
+	/*padding-left: 10%;*/
+}
+
+#goon2
+{
+	font-family:'Goonies', Arial Bold, sans-serif;
+}
+
+#text img
+{
+	width: 95%;
+}
+
+#lineThree
+{
+	letter-spacing: .06em;
+}
+
+#own
+{
+	font-size: 1.8em;
+}
+#blu
+{
+	font-size:1em;
+	letter-spacing: .2em;
+}
+
+
+			/*HOME MEDIA QUERIES*/
+	/*424*/@media screen and (min-width: 26.375em) {
+			p, span
+			{
+				line-height: 2rem;
+			}
+			#lineOne
+			{
+				font-size: 1.67rem;
+			}
+			#goon1
+			{
+				font-size: 1.7rem;
+				clear:both;
+			}
+			#and
+			{
+				font-size:3rem;
+			}
+			#lineThree p
+			{
+				padding-top:.5rem;
+			}
+			
+			
+	}
+	/*483*/@media screen and (min-width: 30.1875em) {
+			
+			#lineThree
+			{
+				letter-spacing: .75rem;	
+			}
+			
+		
+	}
+	/*640*/@media screen and (min-width: 40em) {
+			
+			#and
+			{
+				font-size: 5rem;
+				padding-bottom: 3rem;
+			}
+			#own p 
+			{
+				font-size: 3rem;
+				display:inline;
+				
+			}
+		
+			#goon2
+			{
+				font-size: 2.615rem;
+				line-height: 2.7rem;
+			}
+			
+			#socialNav
+			{
+				margin-top:5%;
+			}
+			
+			#footerNav
+			{
+				padding-top: 50%;
+			}
+			#from
+			{
+				display: inline;
+			}
+
+			#mainFooter
+			{
+				background-image:url(../img/footer_bg.svg), url(../img/footer_bg.png);
+				background-repeat:no-repeat;
+				background-size:cover;
+				transform: translateZ(-1px) scale(1.5);
+/*	right: 15%;*/
+			}
+	}
+	
+	/*1025*/@media screen and (min-width: 64em) {
+			.mainNav li
+			{
+				display: inline;
+				margin-right: 2em;
+				text-align:center
+			
+			}
+			.parallax_layer-house
+			{
+				/*background-color: red;*/
+				transform: translateZ(0);
+				position: relative;
+				margin-top: -700px;
+				
+			} 
+
+
+
+			.parallax 
+{
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.parallax_bannerGroup
+{
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+
+.parallax_layer
+{
+  position: absolute;
+  top: 100px;
+  /*background-color: red;*/
+  /*right: 0;
+  bottom: 0;
+  left: 0;*/
+}
+.parallax_layer-base 
+{
+
+
+  transform: translateZ(-4px) scale(7);
+  top:20%;
+  display: block;
+  right: 15%;
+}
+.parallax_layer-mound
+{	
+	/*background-color: red;*/
+	transform: translateZ(-3px) scale(5);
+	top:17%;
+	margin-left: -500px;
+	display: block;
+}
+.parallax_layer-boat
+{
+	transform: translateZ(-2px) scale(5);
+/*	top:20%;*/
+	margin-top: -100px;
+
+
+}
+.parallax_layer-treeline
+{
+/*	background-color: red;*/
+	transform: translateZ(-1px) scale(3);
+	top:40%;
+	right: 15%;
+	
+}
+
+
+
+
+
+
+
+
+.parallax_contentGroup
+{
+  position: relative;
+  transform-style: preserve-3d;
+  height: 100vh;
+  top:-85%
+}
+.parallax_layer-house
+{
+	/*background-color: red;*/
+	transform: translateZ(0);
+	position: relative;
+	margin-top: -300px;
+	
+} 
+
+
+
+
+.parallax_layer-front{
+	margin-top: 850px;
+}
+
+
+
+
+
+
+
+
+
+
+.parallax_layer-house
+{
+	/*background-color: red;*/
+	transform: translateZ(0);
+	position: relative;
+	margin-top: -700px;
+	
+} 
+
+
+
+
+.parallax_layer-front{
+	margin-top: 850px;
+}
+
+
+
+
+
+
+		
+	}
+	/*1121*//*@media screen and (min-width: 70.0625em) {
+			#lineOne p
+			{
+				display:block;
+			}
+			
+
+			
+	}*/
+	
+			
+
+			
+
+/*TRAILERS */
+
+#trailHead
+{
+	background-image:url(../img/large_wood1.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#trailHead h1
+{
+	text-align:center;
+	margin-top: 10%;
+	padding-bottom: 1em;
+}
+
+#yellow
+{
+	background-color: rgba(167,176,203,0.40);
+	height:300px;
+	width: 600px;
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-top:10%;
+	border: thick #e1c22e;
+}
+
+.teaserVideo
+{
+	margin-top:30px;
+	display:block;
+	margin: 0 auto;
+
+}
+.controls { 
+	width:500px; 
+	height:30px; 
+	color: #fff; 
+ 	text-transform: uppercase; 
+	margin: 0 auto;
+	font-family:'Goonies', Arial Bold, sans-serif;
+	font-size:2em;
+	display: inline;
+}
+
+.controls div { 
+	float:left; 
+	height:40px; 
+	line-height:30px;
+	margin-top: 5px;
+}
+
+.player-button {
+	margin-left:10px; 
+	text-align:center; 
+	cursor:pointer;
+}
+
+#fullTrailer
+{
+	margin: 0 auto;
+	margin-top:10%;
+}
+
+
+
+/*GALLERY*/
+
+#galHead
+{
+	background-image:url(../img/large_wood1.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#galHead h1
+{
+	text-align:center;
+	margin-top: 10%;
+	padding-bottom: 1em;
+}
+
+#container
+{
+	position:relative; 
+	width:100%; 
+	text-align:center; 
+	top:30px;
+}
+
+#mainCon
+{
+	width:37.5em; 
+	height:25em; 
+	background-color:grey; 
+	margin: 0 auto;
+	overflow:hidden;
+	margin-bottom: 2.5em;
+}
+
+#pictures
+{
+	position:relative; 
+	width:487.5em; 
+}
+
+#pictures img
+{
+	float: left;
+}
+
+#bottomNav 
+{
+	
+	margin: 0 auto;
+	margin-bottom: 3em;
+}
+
+#navList li 
+{ 
+	display:inline; 
+	list-style-type:none; 
+	padding:.625em .625em; 
+
+	 
+}
+
+.picButton
+{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	overflow: hidden;
+	background-color: #e1c22e;
+	border-radius: 8px;
+	position:relative;
+	transition: all .5s ease;
+	
+}
+	
+
+.picButton:hover
+{
+	transform: scale(1.5); 
+}
+.mythumbnail
+{
+	border:solid thick rgba(167,176,203,1.00);
+	border-radius: 10px;
+	max-width:100%;
+	max-height: 100%;
+	margin-bottom: 20px;
+}
+			
+
+/*STORY*/
+.firstcharacter
+{
+	font-family: 'Goonies', Helvetica, sans-serif !important;
+	float: left;
+	font-size: 6em; 
+	line-height: 1em; 
+	padding-right: 3px; 
+	padding-left: 3px;
+	color:#e1c22e;
+}
+
+#storyCon
+{
+	background-color: rgba(198,204,221,0.70);
+	
+}
+#storyCon p
+{
+	text-align: justify;
+	color:#010102;
+	text-transform:uppercase;
+	font-weight:bolder;
+}
+				
+
+/*REGESTER*/
+#regCon p
+{
+	line-height: 1em;
+	text-align:center;
+	
+}
+
+#yelGoon
+{
+	font-family:'Goonies', Arial Bold, sans-serif;
+	color:#e1c22e;
+	text-align:center;
+	font-size: 3em;
+}
+#updates
+{
+	font-size: 2em;
+	letter-spacing: .29em;
+}
+#goon
+{
+	font-family:'Goonies', Arial Bold, sans-serif;
+	font-size: 2em;
+	letter-spacing:.9em;
+}
+#deals
+{
+	font-family:'Goonies', Arial Bold, sans-serif;
+	font-size: 3em;
+	letter-spacing:.9rem;
+	text-align:center;
+}
+#regAnd
+{
+	font-size:2em;
+	max-width:600px;
+}
+#andAnd
+{
+	font-size:2.5em;
+	float:left;
+	position:relative;
+}
+
+form
+{
+	margin-bottom: 50px;
+}
+
+
+.myLable
+{
+	color:#e1c22e;
+	font-size: 2rem;
+	text-align:left;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]
+{
+    background-color: #606e97;
+    color: #606e97;
+	border:none;
+	height:3em;
+}
+#submit
+{
+	font-family:'Goonies', Arial Bold, sans-serif;
+	background-color: #606e97;
+	color: #e1c22e;
+	font-size: 2rem;
+	border:none;
+	margin-top: 1em;
+	width: 200px;
+	height: 2em;
+}
+
+
+/*REGESTER MEDIA QUERYS*/
+				/*450*/@media screen and (min-width: 28.125em) {
+							#andAnd
+							{
+								margin-left: 15%;
+							}
+				}
+				/*900*/@media screen and (min-width: 56.25em) {
+							#yelGoon
+							{
+							 	font-size: 4em;
+							}
+							#updates
+							{
+								font-size: 2.5em;
+								letter-spacing: .3em;
+							}
+							#goon
+							{
+								font-size: 3em;
+								letter-spacing:.5em;
+							}
+							#andAnd
+							{
+								font-size:3em;
+								float:left;
+							}
+							#regAnd p
+							{
+								display:inline;
+								float:left;
+								position:relative;
+							}
+							#special
+							{
+								font-size:1.4em;
+								letter-spacing: .3rem;
+							}
+							
+				}
